@@ -2,6 +2,7 @@ import React from "react";
 import Nav from "react-bootstrap/Nav";
 import { Link } from "react-router-dom";
 
+//Setting up the navigation page to render diferent pages from the nav links.
 function Navigation({ currentPage, handlePageChange }) {
 	return (
 		<Nav>

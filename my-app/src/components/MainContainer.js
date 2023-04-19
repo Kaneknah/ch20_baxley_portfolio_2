@@ -9,13 +9,15 @@ import Projects from "./Projects";
 import Footer from "./Footer";
 import Header from "./Header";
 
+//function to render different pages from inside the Main container.
 function MainContainer() {
 	const [currentPage, setCurrentPage] = useState("");
 
 	const handlePageChange = (page) => setCurrentPage(page);
-
+//Always have Header and Footer and Navigation displayed. current page will also be displayed.
 	return (
 		<div>
+			
 			<Header />
 			<Navigation
 				currentPage={currentPage}
