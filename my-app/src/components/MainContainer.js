@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Navigation from "./Navigation";
 import Home from "./Home";
 import About from "./About";
@@ -9,24 +9,24 @@ import Projects from "./Projects";
 import Footer from "./Footer";
 import Header from "./Header";
 
- function MainContainer() {
+function MainContainer() {
 	const [currentPage, setCurrentPage] = useState("");
 
-	const HandlePageChange = (page) => setCurrentPage(page);
+	const handlePageChange = (page) => setCurrentPage(page);
 
 	return (
 		<div>
 			<Header />
 			<Navigation
 				currentPage={currentPage}
-				HandlePageChange={HandlePageChange}
+				handlePageChange={handlePageChange}
 			/>
 			<Routes>
 				<Route path="/" element={<Home />} />
-				<Route path="/about" element={<About />} />
-				<Route path="/contact" element={<Contact />} />
-				<Route path="/resume" element={<Resume />} />
-				<Route path="/projects" element={<Projects />} />
+				<Route path="/About" element={<About />} />
+				<Route path="/Contact" element={<Contact />} />
+				<Route path="/Resume" element={<Resume />} />
+				<Route path="/Projects" element={<Projects />} />
 			</Routes>
 			<Footer />
 		</div>

@@ -1,64 +1,59 @@
 import React from "react";
 import Nav from "react-bootstrap/Nav";
+import { Link } from "react-router-dom";
 
-function Navigation({ currentPage, HandlePageChange }) {
+function Navigation({ currentPage, handlePageChange }) {
 	return (
-		<>
-			<Nav>
-				<Nav.Item>
-					<Nav.Link
-						href="#Home"
-						onClick={() => HandlePageChange("Home")}
-						className={currentPage === "Home" ? "nav-link active" : "nav-link"}>
-						Home
-					</Nav.Link>
-				</Nav.Item>
+		<Nav>
+			<Nav.Item>
+				<Link
+					to="/"
+					onClick={() => handlePageChange("Home")}
+					className={currentPage === "Home" ? "nav-link active" : "nav-link"}>
+					Home
+				</Link>
+			</Nav.Item>
 
-				<Nav.Item>
-					<Nav.Link
-						href="#About"
-						onClick={() => HandlePageChange("Resume")}
-						className={
-							currentPage === "Resume" ? "nav-link active" : "nav-link"
-						}>
-						About
-					</Nav.Link>
-				</Nav.Item>
+			<Nav.Item>
+				<Link
+					to="/About"
+					onClick={() => handlePageChange("About")}
+					className={currentPage === "About" ? "nav-link active" : "nav-link"}>
+					About
+				</Link>
+			</Nav.Item>
 
-				<Nav.Item>
-					<Nav.Link
-						href="#contact"
-						onClick={() => HandlePageChange("Contact")}
-						className={
-							currentPage === "Contact" ? "nav-link active" : "nav-link"
-						}>
-						Contact
-					</Nav.Link>
-				</Nav.Item>
+			<Nav.Item>
+				<Link
+					to="/Contact"
+					onClick={() => handlePageChange("Contact")}
+					className={
+						currentPage === "Contact" ? "nav-link active" : "nav-link"
+					}>
+					Contact
+				</Link>
+			</Nav.Item>
 
-				<Nav.Item>
-					<Nav.Link
-						href="#Resume"
-						onClick={() => HandlePageChange("Resume")}
-						className={
-							currentPage === "Resume" ? "nav-link active" : "nav-link"
-						}>
-						Resume
-					</Nav.Link>
-				</Nav.Item>
+			<Nav.Item>
+				<Link
+					to="/Resume"
+					onClick={() => handlePageChange("Resume")}
+					className={currentPage === "Resume" ? "nav-link active" : "nav-link"}>
+					Resume
+				</Link>
+			</Nav.Item>
 
-				<Nav.Item>
-					<Nav.Link
-						href="#Portfolio"
-						onClick={() => HandlePageChange("Portfolio")}
-						className={
-							currentPage === "Portfolio" ? "nav-link active" : "nav-link"
-						}>
-						Portfolio
-					</Nav.Link>
-				</Nav.Item>
-			</Nav>
-		</>
+			<Nav.Item>
+				<Link
+					to="/Projects"
+					onClick={() => handlePageChange("Projects")}
+					className={
+						currentPage === "Projects" ? "nav-link active" : "nav-link"
+					}>
+					Projects
+				</Link>
+			</Nav.Item>
+		</Nav>
 	);
 }
 
