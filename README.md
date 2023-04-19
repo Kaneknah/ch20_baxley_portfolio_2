@@ -15,7 +15,7 @@
 
 This project was the creation of Portfolio using Front End React features. The Application utilizes React, Javascript, and bootstrap to render a interactive portfolio page for Projects created. The Projects page links to the github of each specific project and allows a user to view a variety of complete works.
 
-![Alt text](./assets/images/Screenshot%202023-03-28%20191512.png)
+![Alt text](./my-app/public/assets/img/screenshot.jpg)
 
 ## Acceptance Criteria
 
@@ -47,7 +47,7 @@ THEN I am presented with text or icon links to the developer’s GitHub and Link
 
 ## Installation
 
-The user will simply need to run <b> npm i</b> to instal the models for the package.json and then run <b>npm start<b> to view the project on the local server.
+The user will simply need to run <b> npm i</b> to instal the models for the package.json and then run <b>npm start</b> to view the project on the local server.
 
 ## Usage
 

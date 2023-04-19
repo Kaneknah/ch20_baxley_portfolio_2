@@ -28,8 +28,8 @@ function Projects() {
 						that utilized day.js and jQuery to provide specific aspects to the
 						Java script to make the page interactive. 
 					</p>
-					<a href="https://github.com/Kaneknah/ch5_baxley_calendar"
-						GitHub Link>
+					<a href="https://github.com/Kaneknah/ch5_baxley_calendar">
+						GitHub Link
 					</a>
 				</Col>
 				<Col>
