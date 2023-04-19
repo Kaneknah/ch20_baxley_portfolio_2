@@ -14,10 +14,9 @@ function MainContainer() {
 	const [currentPage, setCurrentPage] = useState("");
 
 	const handlePageChange = (page) => setCurrentPage(page);
-//Always have Header and Footer and Navigation displayed. current page will also be displayed.
+	//Always have Header and Footer and Navigation displayed. current page will also be displayed.
 	return (
-		<div>
-			
+		<div className="MainContainer">
 			<Header />
 			<Navigation
 				currentPage={currentPage}
