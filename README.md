@@ -74,7 +74,7 @@ No testing was utilized for this project
 - bootstrap
 - JavaScript
 
-### GitHub Link: <https://github.com/Kaneknah/ch20_baxley_portfolio_2/settings/pages>
+### GitHub Link: <https://github.com/Kaneknah/ch20_baxley_portfolio_2>
 
 ### Github Live Link: <https://kaneknah.github.io/ch20_baxley_portfolio_2/>
 
