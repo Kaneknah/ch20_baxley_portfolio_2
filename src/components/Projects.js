@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Image } from "react-bootstrap";
+import { Container, Row, Col, Image, Button } from "react-bootstrap";
 import weather from "../assets/weather.jpg";
 import calendar from "../assets/simple-calendar.jpg";
 import notes from "../assets/notes.jpg";
@@ -12,7 +12,7 @@ function Projects() {
 					<Image src={weather} thumbnail />
 					<h4>Weather Dashboard</h4>
 					<p>
-						his Challenge was the creation of a Weather Dashboard that would
+						This Challenge was the creation of a Weather Dashboard that would
 						utilize API calls from "OpenWeather API" to check the current
 						weather and the five day forecast for s searched city.
 					</p>
@@ -26,11 +26,17 @@ function Projects() {
 					<p>
 						This project was the creation of a simple Task-tracking Calendar
 						that utilized day.js and jQuery to provide specific aspects to the
-						Java script to make the page interactive. 
+						Java script to make the page interactive.
 					</p>
 					<a href="https://github.com/Kaneknah/ch5_baxley_calendar">
 						GitHub Link
 					</a>
+					{/* Trying to add a button link for this to work */}
+					<Button
+						href="https://github.com/Kaneknah/ch5_baxley_calendar"
+						variant="primary">
+						Go to GitHub
+					</Button>
 				</Col>
 				<Col>
 					<Image src={notes} thumbnail />
@@ -38,11 +44,12 @@ function Projects() {
 					<p>
 						This project was the creation of a note taker app that specifically
 						utilized Express.js on the back end to save and retrieve data from
-						JSON files. 
+						JSON files.
 					</p>
 					<a href="https://github.com/yourusername/project3">Github Link</a>
 				</Col>
 			</Row>
+			<p></p>
 		</Container>
 	);
 }
